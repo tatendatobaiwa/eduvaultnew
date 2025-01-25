@@ -11,9 +11,16 @@ import Terms from "./pages/Terms/Terms";
 import Privacy from "./pages/Privacy/Privacy";
 import Profile from "./pages/Profile/Profile";
 import Partner from "./pages/Partner/Partner";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
 import "./App.css";
 
 const hideHeaderFooterRoutes = ['/', '/signup', '/signin'];
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 function App() {
   const location = useLocation();
