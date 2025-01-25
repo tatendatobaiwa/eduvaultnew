@@ -7,6 +7,9 @@ import Scholarships from "./pages/Scholarships";
 import LandingPage from "./pages/Landing/Landing";
 import Signup from "./pages/Signup/Signup";
 import Signin from "./pages/Signin/Signin";
+import Terms from "./pages/Terms/Terms";
+import Privacy from "./pages/Privacy/Privacy";
+import Profile from "./pages/Profile/Profile";
 import "./App.css";
 
 const hideHeaderFooterRoutes = ['/', '/signup', '/signin'];
@@ -25,6 +28,9 @@ function App() {
           <Route path="/signin" element={<Signin />} />
         <Route path="/institutions" element={<Institutions />} />
         <Route path="/scholarships" element={<Scholarships />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       </main>
       {!shouldHideHeaderFooter && <Footer />}
