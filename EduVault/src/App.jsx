@@ -10,6 +10,7 @@ import Signin from "./pages/Signin/Signin";
 import Terms from "./pages/Terms/Terms";
 import Privacy from "./pages/Privacy/Privacy";
 import Profile from "./pages/Profile/Profile";
+import Partner from "./pages/Partner/Partner";
 import "./App.css";
 
 const hideHeaderFooterRoutes = ['/', '/signup', '/signin'];
@@ -31,6 +32,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/partner" element={<Partner />} />
       </Routes>
       </main>
       {!shouldHideHeaderFooter && <Footer />}
