@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import Institutions from "./pages/Institutions";
 import Scholarships from "./pages/Scholarships";
 
+const hideHeaderFooterRoutes = ['/', '/signup', '/signin'];
+
+
 function App() {
   return (
     <Router>
